@@ -11,20 +11,20 @@ window.onload = function(){
         var sort = "rating_desc";
         freesound.textSearch(query, {page:page, filter:filter, sort:sort, fields:fields},
             function(sounds){
-                var msg = "";
+                var msg = ""
                 
-                msg = "<h3>Searching for: " + query + "</h3>";
-                msg += "With filter: " + filter +" and sorting: " + sort + "<br>";
-                msg += "Num results: " + sounds.count + "<br><ul>";
+                msg = "<h3>Searching for: " + query + "</h3>"
+                msg += "With filter: " + filter +" and sorting: " + sort + "<br>"
+                msg += "Num results: " + sounds.count + "<br><ul>"
                 for (i =0;i<=10;i++){  
-                    var snd = sounds.getSound(i);
-                    msg += "<li>" + snd.name + " by " + snd.username + "</li>";
+                    var snd = sounds.getSound(i)
+                    msg += "<li>" + snd.name + " by " + snd.username + "</li>"
                 }
-                msg += "</ul>";
+                msg += "</ul>"
 //                 snd = new Audio(sound.previews['preview-hq-mp3']);
 //                 msg += '<br><button onclick="snd.play()">play</button><button onclick="snd.pause()">pause</button><br><br>';
                 displayMessage(msg,"resp1");
-            },function(){ displayError("Error while searching...");}
+            },function(){ displayError("Error while searching...")}
         );
 
     function displayError(text){
