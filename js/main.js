@@ -15,13 +15,13 @@ window.onload = function(){
                 msg = "<h3>Searching for: " + query + "</h3>";
                 msg += "With filter: " + filter +" and sorting: " + sort + "<br>";
                 msg += "Num results: " + sounds.count + "<br><ul>";
-                for (i =0;i<=10;i++){  
+                for (i =0){  
                     var snd = sounds.getSound(i);
                     msg += "<li>" + snd.name + " by " + snd.username + "</li>";
                 }
                 msg += "</ul>";
                 snd = new Audio(sound.previews['preview-hq-mp3']);
-                    msg += '<br><button onclick="snd.play()">play</button><button onclick="snd.pause()">pause</button><br><br>';
+                msg += '<br><button onclick="snd.play()">play</button><button onclick="snd.pause()">pause</button><br><br>';
                 displayMessage(msg,"resp1");
             },function(){ displayError("Error while searching...");}
         );
