@@ -20,6 +20,8 @@ window.onload = function(){
                     msg += "<li>" + snd.name + " by " + snd.username + "</li>";
                 }
                 msg += "</ul>";
+                snd = new Audio(sound.previews['preview-hq-mp3']);
+                    msg += '<br><button onclick="snd.play()">play</button><button onclick="snd.pause()">pause</button><br><br>';
                 displayMessage(msg,"resp1");
             },function(){ displayError("Error while searching...");}
         );
