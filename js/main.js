@@ -33,4 +33,4 @@ window.onload = function(){
     function displayMessage(text,place){
         document.getElementById(place).innerHTML=text;
     }
-};
+}
