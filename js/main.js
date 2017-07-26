@@ -24,7 +24,7 @@ window.onload = function(){
                     msg += "<li>" + snd.name + " by " + snd.username + "</li>"
                 }
                 msg += "</ul>"
-                displayMessage(msg,"resp2")
+                displayMessage(msg,"resp1")
             },function(){ displayError("Error while searching...")}
         );
 
