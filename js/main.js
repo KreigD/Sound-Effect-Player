@@ -4,7 +4,7 @@ window.onload = function(){
         var fields = 'id,name,url';
         // Example 2
         // Example of searching sounds: querying the freesound db for sounds
-        var query = "dog";
+        var query = "jazz";
         var page = 1;
 //         var filter = "license:[Creative Commons 0]";
         var filter = "tag:tenuto duration:[1.0 TO 15.0]"
