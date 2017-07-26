@@ -6,7 +6,7 @@ window.onload = function(){
         // Example of searching sounds: querying the freesound db for sounds
         var query = "dog";
         var page = 1;
-        var filter = "license:Creative Commons 0";
+        var filter = "license:[Creative Commons 0]";
         var sort = "rating_desc";
         freesound.textSearch(query, {page:page, filter:filter, sort:sort, fields:fields},
             function(sounds){
