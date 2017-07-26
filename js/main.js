@@ -7,6 +7,7 @@ window.onload = function(){
         var query = "dog";
         var page = 1;
 //         var filter = "license:[Creative Commons 0]";
+        var filter = "tag:tenuto duration:[1.0 TO 15.0]"
         var sort = "rating_desc";
         freesound.textSearch(query, {page:page, filter:filter, sort:sort, fields:fields},
             function(sounds){
