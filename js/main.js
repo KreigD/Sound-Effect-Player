@@ -3,7 +3,7 @@
 // xhr.send();
 
 window.onload = function(){
-        freesound.setToken("YOUR_API_KEY_HERE");
+        freesound.setToken("FuiD28l1Fo8cd4FeYJZSkPHo5A0y8JMM8yVfckox");
         
         var fields = 'id,name,url';
         // Example 1
